@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../partials/head %>
+  <title><%= data.title %></title>
+</head>
+<body class="container">
+  <main id="app">
+    <div data-binding="filters"></div>
+    <div data-binding="movies"></div>
+  </main>
+  <script src="public/src/main.js"></script>
+  <script>
+    new App(document.getElementById('app'), '<%= data.apiKey %>')
+  </script>
+</body>
+</html>
